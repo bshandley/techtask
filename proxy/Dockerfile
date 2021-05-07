@@ -1,4 +1,4 @@
 FROM nginx
-COPY default.conf /etc/nginx/conf.d/
-COPY localhost.crt /etc/ssl/certs/
-COPY localhost.key /etc/ssl/private/
+COPY proxy_ssl.conf /etc/nginx/conf.d/
+COPY cert.pem /etc/nginx/conf.d/
+COPY key.pem /etc/nginx/conf.d/
