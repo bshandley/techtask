@@ -29,7 +29,10 @@ Solution consists of two Docker containers. The first container is an Nginx reve
 
 
 # Usage
-> Note: the user executing the code below should be part of the `docker` user group.
+> Note: the user executing the Docker code below should be part of the `docker` user group.
+
+### Installation
+Execute `git clone https://github.com/bshandley/techtask.git` in the desired subfolder.
 
 ### Startup
 Execute `docker-compose up -d` from within the project folder. Executing `docker ps` should result in two new containers, namely **nginx-proxy** and **node-server**.
