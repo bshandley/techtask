@@ -38,6 +38,7 @@ Execute `docker-compose down` from within the project folder. This stops the **n
 
 ### Logging in
 Navigate to [https://localhost](https://localhost) to be prompted for a username and password. Test credentials have been provided below.
+
 `username: palo`
 `password: alto`
 
