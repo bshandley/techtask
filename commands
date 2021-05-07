@@ -1,8 +1,0 @@
-docker build -t proxy ./proxy
-
-docker run -d -p 8080:80 --link node-server:server --name nginx-proxy proxy
-
-docker system prun
-
-docker build ./web -t web
-docker run -d -p 3000:3000 --name node-server web

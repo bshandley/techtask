@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
+const path = require("path");
 
-app.get('/55jsyeks', (req, res) => res.send('Token auth!'));
-app.get('/', (req, res) => res.send('Password auth!'));
-app.listen(3000, () => console.log('Server ready'));
+app.get(['/'], (req, res) => res.redirect(301, '/index.htm'));
+
+
+app.get('*/index.htm', (req, res) => res.sendFile(path.join(__dirname, '/index.htm')));
+
+app.listen(3000);
