@@ -20,6 +20,7 @@ Solution consists of two Docker containers. The first container is an Nginx reve
  * proxy_ssl.conf - Configuration file for Nginx
  * cert.pem - Self-signed SSL Cert
  * key.pem - Key for SSL Cert
+ * .htpasswd - Password file containing the encrypted password the main user
 
 # Requirements
 
