@@ -13,4 +13,5 @@ services:
       - 'node-server:server'
     ports:
       - '443:443'
+      - '80:80'
 
