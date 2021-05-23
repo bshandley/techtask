@@ -1,4 +1,5 @@
 FROM node:latest
+RUN apt-get update
 WORKDIR /usr/src/app
 ADD package*.json app.js index.htm ./
 RUN npm install
