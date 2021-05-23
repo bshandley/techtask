@@ -1,6 +1,7 @@
 FROM node:latest
+RUN apt-get update
 WORKDIR /usr/src/app
-COPY package*.json app.js index.htm ./
+ADD package*.json app.js index.htm ./
 RUN npm install
 EXPOSE 3000
 CMD ["node", "app.js"]
